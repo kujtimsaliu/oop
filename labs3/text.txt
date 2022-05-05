@@ -1,0 +1,108 @@
+lab1
+Во оваа задача треба да се внесат и испечатат податоци за автомобили.
+
+За еден автомобил (објект од класата Car) се чуваат следниве податоци:
+
+сопственик (објект од класата Person)
+датум на купување (објект од класата Date)
+цена (float price), предодредена вредност 0
+За класата Car потребно е да се напише метод за печатење print() и метод за добивање на цената getPrice().
+
+Класата Date содржи три цели броеви (int year, month, day) кои претставуваат датум. За неа треба да се напише метод за печатење print(), предодреден (default) конструктор, конструктор со параметри и конструктор за копирање.
+
+Класата Person содржи име и презиме (низи од максимум 20 знаци, со предодредени вредности not specified), предодреден конструктор, конструктор со параметри и метод за печатење print().
+
+Методот за печатење кај класата Person изгледа вака: [name] [lastName].
+
+Методот за печатење кај класата Date изгледа вака: [year].[month].[day].
+
+Методот за печатење кај класата Car изгледа вака:
+
+owner.print()
+
+date.print()
+
+Price: [price]
+
+Покрај тоа, потребно е да се напише метод 
+cheaperThan(Car* cars, int numCars, float price) 
+кој ќе ги испечати сите објекти Car од низата cars 
+со големина numCars чија цена е помала од price.
+
+task2
+/*
+Договор Problem 2 (5 / 17) 
+Да се дефинира класа Potpisuvac во која се 
+чуваат информации за:
+име (низа од максимум 20 знаци)
+презиме (низа од максимум 20 знаци)
+ЕМБГ (низа од максимум 14 знаци)
+
+За класата да се дефинира copy конструктор, default конструктор и конструктор со аргументи.
+Да се дефинира класа Dogovor, во која се чуваат информации за:
+број на договор (int),
+категорија на договор (низа од 50 знаци),
+поле од 3 потпишувачи на договорот (објекти од класата Potpisuvac)
+Во класата да се додаде метод кој ќе
+проверува дали постојат два исти потпишувачи 
+(имаат ист ЕМБГ).
+100%
+*/
+
+task3
+
+Во оваа задача потребно е да се внесат податоци за насловна страница на списание.
+
+За претставување на насловната страница напишете класа FrontPage која ќе содржи:
+
+објект од класата NewsArticle која ја претставува насловната вест на страницата
+цена (float price) со предодредена вредност 0
+број на издание на списанието (int editionNumber) со предодредена вредност 0
+За класата FrontPage напишете предодреден (default) конструктор и конструктор со параметри. Класата NewsArticle треба да содржи:
+
+објект од класата Category која ја претставува категоријата во која спаѓа веста
+наслов од максимум 30 знаци (char title[30]) со предодредена вредност untitled
+За класата NewsArticle напишете предодреден конструктор и конструктор со параметри.
+
+Класата Category треба да содржи име од максимум 20 знаци (char name[20]) со предодредена вредност unnamed.
+
+За сите класи треба да напишете соодветен метод за печатење print().
+
+Внимајте на редоследот на параметрите во конструкторите. Не го менувајте main методот.
+
+За категоријата се печати само името: Category: [name].
+
+За веста се печати насловот, па категоријата во нов ред:
+
+Title: [title]
+
+category.print()
+
+За насловната страница се печати цената и изданието во прв ред, па веста во втор:
+
+Price: [price], Edition number: [editionNumber]
+
+article.print()
+
+
+task5
+Create a Rabotnik class that includes:
+
+name (array of up to 30 characters)
+surname (string of maximum 30 characters)
+plate (integer value)
+Create a default constructor and argument constructor for this class. Implement the following methods:
+
+getPlata () which returns the employee's salary
+pecati () which prints the name, surname and salary.
+Create a Fabrika class that includes:
+
+rabotnik [100] (array of employees)
+numberEmployment (integer value)
+Implement the following methods in class:
+
+pecatiVraboteni () print all employees
+pecatiSoPlata (int plata) prints all employees with a salary greater than or equal to the one given in the argument (int plata).
+Data on n employees are entered in the main function. First n is entered, then the data for all n employees. The last line reads the minimum wage.
+
+At the exit to show first all employees, and then only those with a higher salary than the minimum. The pecatiVraboteni and pecatiSoPlata methods should be used!
